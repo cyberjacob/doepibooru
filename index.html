@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doepibooru</title>
+
+    <style>
+        body {
+            background-color: #665c57;
+            font-size: 32px;
+            font-family: sans-serif;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            border-bottom: 3px #211e1c solid;
+        }
+
+        #topbar {
+            background-color: #7e726c;
+            padding: 10px;
+            border-bottom: 3px #211e1c solid;
+        }
+
+        #searchBox {
+            background-color: #463f3c;
+            padding: 3px;
+        }
+
+        input {
+            background-color: #463f3c;
+            border: none;
+            font-size: 28px;
+            color: white;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        #body {
+            padding: 10px;
+            display: flex;
+        }
+
+        .imageWrapper {
+            border: 2px #211e1c solid;
+            margin: 5px;
+            background-color: #211e1c;
+        }
+
+        .imageWrapperTop {
+            border-bottom: 2px #211e1c solid;
+            background-color: #383330;
+            font-size: 20px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .star {
+            color: #a48e27;
+        }
+
+        #featured {
+            float: left;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        .fakelink {
+            color: #a591c5;
+        }
+
+        #images {
+            background-color: #7e726c;
+            padding: 5px;
+            flex-grow: 1;
+        }
+
+        #content {
+            background-color: #665c57;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .pic {
+            max-width: 25vw;
+            max-height: 55vh;
+            vertical-align: middle;
+        }
+
+        footer {
+            clear: both;
+            font-size: 15px;
+            color: #a9a6a5;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="topbar">
+        <img src="images/logo.png" alt="Cute Doe Logo" height="30px" />
+        Doepibooru
+        <img src="images/upload.svg" alt="Upload Icon" height="30px" style="padding-left: 30px;" />
+        <span id="searchBox">
+            <input type="text" placeholder="Search" />
+            <img src="images/search.svg" alt="Search Icon" height="30px"/>
+            <img src="images/camera.svg" alt="Camera Icon" height="30px"/>
+            <img src="images/help.svg" alt="Question Icon" height="30px"/>
+        </span>
+    </div>
+    <nav>
+        Images<img src="images/down.svg" alt="Down Icon"  height="30px"/><span style="padding-left: 30px;">&nbsp;</span>
+        Activity<img src="images/down.svg" alt="Question Icon"  height="30px"/><span style="padding-left: 30px;">&nbsp;</span>
+        Forums<img src="images/down.svg" alt="Question Icon"  height="30px"/><span style="padding-left: 30px;">&nbsp;</span>
+        Tags<span style="padding-left: 30px;">&nbsp;</span>
+        Live 0<span style="padding-left: 30px;">&nbsp;</span>
+        Galleries<span style="padding-left: 30px;">&nbsp;</span>
+        Commissions
+    </nav>
+</header>
+<div id="body">
+    <div id="featured">
+        Featured Image<br/>
+        <div class="imageWrapper">
+            <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span id="FeaturedFavourites">1234</span>
+                </span>
+                <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                <span id="FeaturedVotes">1234</span>
+                <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                <span id="FeaturedComments">1234</span>
+                <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+            </div>
+            <a href="https://twitter.com/yaboielement/status/1204485589288079360">
+            <video preload="auto"
+                   autoplay="autoplay"
+                   loop="loop"
+                   playsinline=""
+                   style="max-width: 25vw;"
+                   src="images/featured.mp4"></video>
+            </a>
+        </div>
+    </div>
+    <div id="images">
+        1
+        <span class="fakelink">
+            2
+            3
+            4
+            5
+            6
+        </span>
+        ...
+        <span class="fakelink">
+            Next&gt;
+            Last&gt;
+        </span>
+        <div id="content">
+            <div class="imageWrapper">
+                <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span class="OtherFavourites">1234</span>
+                </span>
+                    <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                    <span class="OtherVotes">2671</span>
+                    <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                    <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                    <span class="OtherComments">101</span>
+                    <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+                </div>
+                <a>
+                <img src="" alt="Cute Doe Image" class="pic" />
+                </a>
+            </div>
+
+            <div class="imageWrapper">
+                <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span class="OtherFavourites">1234</span>
+                </span>
+                    <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                    <span class="OtherVotes">2671</span>
+                    <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                    <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                    <span class="OtherComments">101</span>
+                    <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+                </div>
+                <a>
+                <img src="" alt="Cute Doe Image" class="pic" />
+                </a>
+            </div>
+
+            <div class="imageWrapper">
+                <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span class="OtherFavourites">1234</span>
+                </span>
+                    <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                    <span class="OtherVotes">2671</span>
+                    <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                    <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                    <span class="OtherComments">101</span>
+                    <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+                </div>
+                <a>
+                <img src="" alt="Cute Doe Image" class="pic" />
+                </a>
+            </div>
+
+            <div class="imageWrapper">
+                <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span class="OtherFavourites">1234</span>
+                </span>
+                    <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                    <span class="OtherVotes">2671</span>
+                    <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                    <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                    <span class="OtherComments">101</span>
+                    <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+                </div>
+                <a>
+                <img src="" alt="Cute Doe Image" class="pic" />
+                </a>
+            </div>
+
+            <div class="imageWrapper">
+                <div class="imageWrapperTop">
+                <span class="star">
+                    <img src="images/star.svg" alt="Star Icon" height="16px" />
+                    <span class="OtherFavourites">1234</span>
+                </span>
+                    <img src="images/up-arrow.svg" alt="Up Arrow"  height="16px" />
+                    <span class="OtherVotes">2671</span>
+                    <img src="images/down-arrow.svg" alt="Down Arrow"  height="16px" />
+                    <img src="images/comment.svg" alt="Comments Icon"  height="16px" />
+                    <span class="OtherComments">101</span>
+                    <img src="images/hide.svg" alt="Hide Icon"  height="16px" />
+                </div>
+                <a>
+                <img src="" alt="Cute Doe Image" class="pic" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2020 CyberJacob, for <a href="https://twitter.com/yaboielement">This Cutie</a>. Images by Element. Pictograms by Daniel Bruce — www.entypo.com.
+</footer>
+
+<script>
+    document.getElementById("FeaturedFavourites").innerText = (Math.floor(Math.random() * 1000) + 1000).toString();
+    document.getElementById("FeaturedVotes").innerText = (Math.floor(Math.random() * 3000) + 3000).toString();
+    document.getElementById("FeaturedComments").innerText = (Math.floor(Math.random() * 100) + 100).toString();
+
+    Array.from(document.getElementsByClassName("OtherFavourites")).forEach(function(element, index, array) {
+        element.innerText = (Math.floor(Math.random() * 100) + 100).toString();
+    });
+
+    Array.from(document.getElementsByClassName("OtherVotes")).forEach(function(element, index, array) {
+        element.innerText = (Math.floor(Math.random() * 300) + 300).toString();
+    });
+
+    Array.from(document.getElementsByClassName("OtherComments")).forEach(function(element, index, array) {
+        element.innerText = (Math.floor(Math.random() * 10) + 10).toString();
+    });
+
+    var myPix = [
+        ["cuties/1.jpg","https://twitter.com/yaboielement/status/1245093224060006401"],
+        ["cuties/2.jpg","https://twitter.com/yaboielement/status/1218630706089381888"],
+        ["cuties/3.jpg","https://twitter.com/yaboielement/status/1196846555699056641"],
+        ["cuties/4.jpg","https://twitter.com/SelenophileNSFW/status/1158577577713373185"],
+        ["cuties/5.jpg","https://twitter.com/wholesomedoe/status/1204859413024129024"],
+        ["cuties/6.jpg","https://twitter.com/yaboielement/status/1136352497633759232"],
+        ["cuties/7.jpg","https://twitter.com/yaboielement/status/1070741761084010497"],
+        ["cuties/8.jpg","https://twitter.com/yaboielement/status/1258113367065145348"],
+        ["cuties/9.jpg","https://twitter.com/yaboielement/status/1211052680782761984"],
+        ["cuties/10.jpg","https://twitter.com/yaboielement/status/1209193910649663489"],
+        ["cuties/11.jpg","https://twitter.com/wholesomedoe/status/1267082715532341249"],
+        ["cuties/12.jpg","https://twitter.com/wholesomedoe/status/1276970664898056192"],
+        ["cuties/13.jpg","https://twitter.com/wholesomedoe/status/1262462122832912384"],
+        ["cuties/14.jpg","https://twitter.com/wholesomedoe/status/1262104249137274880"],
+        ["cuties/15.jpg","https://twitter.com/wholesomedoe/status/1232031520912748544"]
+    ];
+
+    Array.from(document.getElementsByClassName("pic")).forEach(function(element, index, array) {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        element.src = myPix[randomNum][0];
+        element.parentNode.href = myPix[randomNum][1];
+
+        myPix.splice(randomNum, 1);
+    });
+</script>
+</body>
+</html>
